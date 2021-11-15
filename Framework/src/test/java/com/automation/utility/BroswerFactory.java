@@ -18,7 +18,7 @@ public class BroswerFactory {
 		     		     
 		}
 		
-		driver.manage().timeouts().pageLoadTimeout(90,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(70,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		driver.get(appURL);

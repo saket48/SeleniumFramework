@@ -14,11 +14,11 @@ import org.openqa.selenium.io.FileHandler;
 public class Helper {
 
 	
-	public static void captureScreenshot(WebDriver driver) {
+	public static String captureScreenshot(WebDriver driver) {
 		
 		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String ScrnshotPath ="./Screenshots/CRM_"+getCurrentDateTime()+"_.png";
-		System.out.println(ScrnshotPath);
+		String ScrnshotPath =System.getProperty("user.dir")+"/Screenshots/CRM_"+getCurrentDateTime()+"_.png";
+//		System.out.println(ScrnshotPath);
 		
 		
 		try {
@@ -29,7 +29,7 @@ public class Helper {
 			System.out.println("Unable to capture Screenshot !!");
 		}
 		
-		
+		return ScrnshotPath;
 	}
 
 	public static String getCurrentDateTime() {

@@ -43,7 +43,7 @@ public class LoginPage {
 		} 
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 			username.sendKeys(uname);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
@@ -51,7 +51,7 @@ public class LoginPage {
 		}
 		
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			password.sendKeys(pwd);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
@@ -59,7 +59,7 @@ public class LoginPage {
 		}
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			loginSubmit.click();
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

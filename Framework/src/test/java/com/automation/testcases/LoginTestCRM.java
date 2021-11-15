@@ -20,15 +20,19 @@ public class LoginTestCRM  extends BaseClass{
 	@Test
 	public void loginApp() {
 		
-		String uname = excel.getStringData(0, 0, 0);
-		String pwd = excel.getStringData(0, 0, 1);
+		logger = report.createTest("Login to CRM");
+		
+		String uname = excel.getStringData(0, 1, 0);
+		String pwd = excel.getStringData(0, 1, 1);
 		
 	
 		LoginPage loginPage = PageFactory.initElements(driver,LoginPage.class);
-
+        logger.info("Starting Appn");
 		
+//        System.out.println("passwprd = = "+pwd+"-");
+        
 		loginPage.loginToCRM(uname,pwd);
-		
+		logger.pass("Login Sucessful");
 		 
 	}
 	

@@ -48,6 +48,7 @@ public class BaseClass {
 		String browser = config.getBrowser();
 		driver = BroswerFactory.startApplication(driver,browser,appURL);
 		Reporter.log("application launched ",true);
+		
 	}
 	
 	@AfterClass

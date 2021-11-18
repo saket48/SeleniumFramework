@@ -15,7 +15,7 @@ public class BroswerFactory {
 			
 			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 		     driver = new ChromeDriver();
-		     		     
+		     		    
 		}
 		
 		driver.manage().timeouts().pageLoadTimeout(70,TimeUnit.SECONDS);

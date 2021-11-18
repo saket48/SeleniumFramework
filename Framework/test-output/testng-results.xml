@@ -17,12 +17,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-11-15T06:34:52Z" name="Default suite" finished-at="2021-11-15T06:35:20Z" duration-ms="27977">
+  <suite started-at="2021-11-18T08:12:45Z" name="Suite" finished-at="2021-11-18T08:13:13Z" duration-ms="27633">
     <groups>
     </groups>
-    <test started-at="2021-11-15T06:34:52Z" name="Default test" finished-at="2021-11-15T06:35:20Z" duration-ms="27977">
+    <test started-at="2021-11-18T08:12:45Z" name="Test" finished-at="2021-11-18T08:13:13Z" duration-ms="27633">
       <class name="com.automation.testcases.LoginTestCRM">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2]" started-at="2021-11-15T06:34:51Z" name="setUpSuite" finished-at="2021-11-15T06:34:52Z" duration-ms="1210" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda]" started-at="2021-11-18T08:12:44Z" name="setUpSuite" finished-at="2021-11-18T08:12:45Z" duration-ms="1231" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Starting the setup Suite]]>
@@ -32,22 +32,22 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2]" started-at="2021-11-15T06:34:52Z" name="setup" finished-at="2021-11-15T06:34:59Z" duration-ms="6534" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda]" started-at="2021-11-18T08:12:46Z" name="setup" finished-at="2021-11-18T08:12:52Z" duration-ms="6969" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[application launched ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2]" started-at="2021-11-15T06:34:59Z" name="loginApp" finished-at="2021-11-15T06:35:20Z" duration-ms="20609" status="PASS">
+        <test-method signature="loginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda]" started-at="2021-11-18T08:12:52Z" name="loginApp" finished-at="2021-11-18T08:13:12Z" duration-ms="19468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2]" started-at="2021-11-15T06:35:20Z" name="tearDownMethod" finished-at="2021-11-15T06:35:20Z" duration-ms="626" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda]" started-at="2021-11-18T08:13:12Z" name="tearDownMethod" finished-at="2021-11-18T08:13:13Z" duration-ms="967" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCRM.loginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCRM.loginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda] output={null}]]]>
               </value>
             </param>
           </params>
@@ -57,7 +57,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.testcases.LoginTestCRM@4b29d1d2]" started-at="2021-11-15T06:35:20Z" name="teardown" finished-at="2021-11-15T06:35:20Z" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.testcases.LoginTestCRM@7f485fda]" started-at="2021-11-18T08:13:13Z" name="teardown" finished-at="2021-11-18T08:13:13Z" duration-ms="205" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed]]>
@@ -65,6 +65,6 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.automation.testcases.LoginTestCRM -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

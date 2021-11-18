@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.automation.utility.BroswerFactory;
 import com.automation.utility.ConfigDataProvider;
@@ -41,11 +42,16 @@ public class BaseClass {
 		Reporter.log("Data Setup done",true);
 	}
 	
+	@Parameters("browser")
 	@BeforeClass
-	public void setup() {
+	//parameter passed in this method is coming directly from pom.xml
+	public void setup(String browser) {
 		
 		String appURL = config.getStagingURL();
-		String browser = config.getBrowser();
+	//	String browser = config.getBrowser();
+		
+//		String browser = config.getBrowser();
+		
 		driver = BroswerFactory.startApplication(driver,browser,appURL);
 		Reporter.log("application launched ",true);
 		

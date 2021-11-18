@@ -5,6 +5,13 @@
 	<groupId>Framework</groupId>
 	<artifactId>Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -44,6 +51,7 @@
 			<version>4.1.2</version>
 		</dependency>
 
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -54,8 +62,11 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-					<suiteXmlfile>XMLFiles/testng.xml</suiteXmlfile>
+						<suiteXmlfile>XMLFiles/testng.xml</suiteXmlfile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<executionBrower>${browser}</executionBrower>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 
